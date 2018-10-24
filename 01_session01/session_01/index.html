@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JS SESSION 1 (dev-js-session1)</title>
+  <link rel="stylesheet" href="../../00_snippets/js/style.css">
+</head>
+
+<body>
+  <h1>JS SESSION 1</h1>
+  <section class="exo">
+    <article class="enonce done">
+      <h3>Exercice 1: Paramètre à afficher</h3>
+      <p>Écrire une fonction displayTextBox() prenant une string en paramètre et l'affichant dans une alert box.</p>
+      <p>Exécuter la méthode au rechargement de la page et depuis la console du navigateur.</p>
+    </article>
+  </section>
+  <section class="exo">
+    <article class="enonce done">
+      <h3>Exercice 2: Sur une ligne</h3>
+      <p>Écrire une fonction displayTextBox() prenant une string en paramètre et l'affichant dans une alert box.</p>
+      <p> Exécuter la méthode au rechargement de la page et depuis la console du navigateur.</p>
+    </article>
+  </section>
+  <section class="exo">
+    <article class="enonce done">
+      <h3>Exercice 3: Multiplication</h3>
+      <p>Écrire une fonction prenant deux paramètres a et b et les affichant dans la console, à la suite sur une même ligne, séparés par un espace.</p>
+      <p>Commencer avec les paramètres de son choix. Puis tenter avec les deux strings suivantes: </p>
+      <ul>
+        <li>C'est une belle journée...</li>
+        <li>Pour s’exercer à JS!</li>
+      </ul>
+    </article>
+  </section>
+  <section class="exo">
+    <article class="enonce done">
+      <h3>Exercice 4: Affichage d'objets</h3>
+      <p>Créer une div HTML portant l'id res_user1</p>
+      <p> Créer deux objet littéraux user1 et user2 (attention à la portée des variables). Chaque objet a 2 membres:</p>
+      <ul>
+        <li>name: string</li>
+        <li>age: number</li>
+      </ul>
+      <p>Affecter des valeur cohérentes aux objets selon leur type.</p>
+      <p>Écrire une fonction getName(user), retournant le nom de l'user passé en paramètre</p>
+      <p>Écrire une fonction getAge(user), retournant l'age de l'user passé en paramètre.</p>
+      <p>Écrire une fonction displayUserInfo(user).</p>
+      <p>Cette méthode affiche dans la div les informations de l'utilisateur passé en paramètre.</p>
+      <p>Par exemple: 'Cet utilisateur se nommant Joe est âgé(e) de 23 ans'.</p>
+      <p>La div doit être vidée à chaque nouvel appel de fonction.</p>
+      <p>Faire marcher le code depuis la console du navigateur.</p>
+      <p>Trouver des idées pour améliorer ce programme.</p>
+    </article>
+    <article class="reponse">
+      <h4>affiche dans la div les informations de l'utilisateur</h4>
+      <section id="res_user1"></section>
+      <button id="show_res">Add</button>
+      <button id="rmv_res">Remove</button>
+    </article>
+  </section>
+  <section class="exo">
+    <article class="enonce done">
+      <h3>Exercice 5: Easy DOM</h3>
+      <p> Déclarer 5 div et un p en HTML.</p>
+      <p>Styliser sommairement ces éléments,</p>
+      <p>Identifier chaque div et le p avec un attribut id.</p>
+      <p> Utiliser une méthode de manipulation du DOM fournie par JS pour stocker les div dans un array.</p>
+      <p> Parcourir ce tableau avec une boucle.</p>
+      <p> À l'exécution, le programme doit afficher l'id de chaque div dans le p en sautant des lignes.</p>
+    </article>
+    <article class="reponse">
+      <div id="exo5">
+        <div id="easy_dom1" class="easy_dom_css"></div>
+        <div id="easy_dom2" class="easy_dom_css"></div>
+        <div id="easy_dom3" class="easy_dom_css"></div>
+        <div id="easy_dom4" class="easy_dom_css"></div>
+        <div id="easy_dom5" class="easy_dom_css"></div>
+      </div>
+      <p id="getEasyDOM"></p>
+    </article>
+  </section>
+  <section class="exo">
+    <article class="enonce done">
+      <h3>Exercice 6: Click en couleur</h3>
+      <p>Utiliser le code de l'exercice 5.</p>
+      <p>Ajouter un attribut onclik sur chaque div.</p>
+      <p>Le click exécute une méthode colorDiv().</p>
+      <p>Cette fonction ajoute un attribut style appliquant un background-color à la div cliquée</p>
+    </article>
+  </section>
+
+  <script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>

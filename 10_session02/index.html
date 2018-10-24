@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JS Session 2</title>
+  <link rel="stylesheet" href="../00_snippets/js/style.css">
+</head>
+
+<body>
+  <h1>JS SESSION 2</h1>
+  <section class="exo">
+    <article class="enonce done">
+      <h2>Exercice 0</h2>
+      <p>Avant de commencer les exos de la session 2, créer une fonction constructeur de votre choix.</p>
+      <p>Créer plusieurs instances de votre constructeur avec des paramètres différents.</p>
+      <p>En option: lier une ou plusieurs méthodes via le prototype</p>
+    </article>
+    <article class="reponse">
+      <div id="show"></div>
+      <button type="button" name="getPlayer" id="getPlayer">Get Player</button>
+      <button type="button" name="clear" id="clear">Clear</button>
+    </article>
+  </section>
+  <section class="exo">
+    <article class="enonce done">
+      <h2>Exercice 1: Inverser les couleurs</h2>
+      <p>Déclarer deux div HTML portant respectivement les id green et red.</p>
+      <p>Ces div ont un attribut style liant une couleur de fond, respectivement rouge et verte</p>
+      <p>Placer un attribut onclick sur chaque div. </p>
+      <p>Le click doit lancer l’exécution d'une fonction invertColor().</p>
+      <p>Passer la valeur this en paramètre de cette fonction.</p>
+      <p>(test: afficher la valeur de ce paramètre dans le corps de la fonction)</p>
+      <p>Utiliser les id pour permettre à votre programme d'intervertir la couleur des div</p>
+    </article>
+    <article class="reponse">
+      <div id="green" style="background-color: red">green</div>
+      <div id="red" style="background-color: green">red</div><br>
+      <button type="button" name="button" id="btnInvColor">Invert Color</button>
+    </article>
+  </section>
+  <section class="exo">
+    <article class="enonce done">
+      <h2>Exercice 2: Inversion de lettres</h2>
+      <p>Écrire une fonction swapLetters(str) inversant l'ordre des lettres de la chaîne passée en paramètre</p>
+      <p>Elle retourne le résultat de l'inversion sous la forme d'une chaîne de caractères.</p>
+      <p>Afficher cette chaîne inversée dans la console</p>
+    </article>
+    <article class="reponse">
+      <div id="swap"></div>
+      <button type="button" name="button" id="btnSwap">Swap Letters
+      section
+    </button>
+    </article>
+  </section>
+  <section class="exo">
+    <article class="enonce done">
+      <h2>Exercice 3: Lignes et colonnes</h2>
+      <p>Écrire deux fonctions drawRow(row, col) et drawColumn(col)</p>
+      <p>drawRow() prend 2 entiers en paramètres:</p>
+      <ul>
+        <li>nombre de lignes à dessiner</li>
+        <li>nombre de colonnes par ligne</li>
+      </ul>
+      <p>drawColumn() retourne une chaîne de caractères dessinant les colonnes remplissant une ligne.</p>
+      <p>drawRow() retourne une chaîne de caractères à afficher dans la console</p>
+      <p>Appeler successivement drawRow(?,?) en jouant sur les paramètres pour obtenir ce résultat:</p>
+    </article>
+    <article class="reponse" id="pyramid"></article>
+  </section>
+  <section class="exo">
+    <article class="enonce">
+      <h2>Exercice 4: Palindrome</h2>
+      <p>Écrire la fonction estPalindrome(str) testant si la chaîne passée en paramètre est bien un palindrome.</p>
+      <p>Rappel: un palindrome est une chaîne pouvant se lire dans les deux sens.</p>
+      <p>EstPalindrome() retourne true si str est palindrome, false dans le cas contraire.</p>
+      <p>Tester avec les valeurs: 'non palindrome', 'bob', 'rotor', 'Kayak'.</p>
+      <p>Résultats attendus: false, true, true, true, true</p>
+      <p>Pour aller plus loin : le test sur 'Sa nana snob porte de trop bons ananas' doit retourner true.
+      </p>
+    </article>
+    <article class="reponse"></article>
+  </section>
+  <section class="exo">
+    <article class="enonce">
+      <h2>Exercice 5: Usine à Users</h2>
+      <p>Créer une div HTML portant l'id res_user2</p>
+      <p>Créer un button ou input HTML portant l'id trigger_greetings.</p>
+      <p>Écrire un constructeur User() produisant des objets user</p>
+      <p>Chaque objet a 3 membres:</p>
+      <ul>
+        <li>name: string</li>
+        <li>age: number</li>
+        <li>sayHello: function(object) { /*ex: affiche dans la console: 'Hello Alfred!!!' */}</li>
+      </ul>
+      <p>Coder la fonction createUser(count),</p>
+      <p>Cette méthode instancie n objet users (n est passé en paramètre)</p>
+      <p><em>Exemple: en lui passant 3 en paramètre, 3 objets user devront être créés</em></p>
+      <p>Le programme demande à l'utilisateur de saisir les membres name et age pour chaque nouvel objet via une méthode prompt() fournie par JS. Une vérification de type doit être effectuée. Tant que le type est incorrecte, le programme redemandera à l'utilisateur
+        de ressaisir.</p>
+      <p>Retourner un array contenant les n objets créés et le stocker.</p>
+      <p>Écrire une fonction helloUser(users), exécutée au click sur le button HTML.</p>
+      <p>Tester d'abord le contenu due l'array</p>
+      <p>Au moyen d'une boucle, cette méthode doit afficher dans la console le résultat de la fonction sayHello(toUser) exécutée par chaque objet user et prenant en paramètre l'objet user contenu dans la case précédente de l'array.</p>
+    </article>
+    <article class="reponse">
+      <div id="res_user2"></div>
+      <button type="button" name="btnTrigger" id="trigger_greetings"></button>
+    </article>
+  </section>
+  <script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>

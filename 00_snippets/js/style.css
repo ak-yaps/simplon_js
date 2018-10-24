@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: rgb(247, 223, 30);
+  color: black;
+  text-align: center;
+  font-size: 1.5em;
+  font-family: sans-serif;
+}
+
+button {
+  border: 1px solid;
+  padding: 2em;
+  margin-top: 2em;
+  background: black;
+  color: rgb(247, 223, 30);
+  outline-color: rgb(247, 223, 30);
+  box-shadow: 10px 10px 5px black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:active {
+  background: rgb(247, 223, 30);
+  color: black;
+  outline-color: black;
+}
+
+li {
+  list-style-type: none;
+}
+
+hr {
+  border: 1px solid black;
+}
+
+.exo {
+  border: 2px dashed black;
+  padding: 2%;
+}
+
+.enonce {
+  box-shadow: 10px 10px 20px 0 #000000;
+  padding: 2%;
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+.reponse {
+  padding: 5%;
+}
+
+.reponse:empty, #swap:empty, #show:empty {
+  display: none;
+}
+/*****SESSION 01*****/
+/*EXERCICE 5*/
+.easy_dom_css {
+  width: 100px;
+  height: 100px;
+  border: 1px solid;
+  display: inline-block;
+}
+
+/*****TRAINING 05****/
+#todo_while>li, #todo_for>li {
+  list-style-type: hiragana;
+}
+
+/*****TD CLICK*****/
+.fa-id-card {
+  font-size: 10rem;
+  transition: color 2s, font-size 2s, transform 2s;
+}
+
+.is-active {
+  color: PaleGoldenRod;
+  background-color: inherit;
+  font-size: 30em;
+  transition: color 2s, font-size 2s, transform 2s;
+}
+
+/*****TD SCROLL*****/
+#header {
+  position: fixed;
+  color: black;
+  background: MediumOrchid;
+  width: 100%;
+  z-index: 10;
+  height: 50px;
+}
+
+.pane {
+  position: relative;
+  top: 50px;
+  height: calc(100vh - 50px);
+}
+
+.pane:nth-of-type(1) {
+  background: plum;
+  color: black;
+}
+
+.pane:nth-of-type(2) {
+  background: mediumpurple;
+  color: black;
+}
+
+.pane:nth-of-type(3) {
+  background: indigo;
+  color: black;
+}
+
+.list {
+  display: flex;
+}
+
+.list .item {
+  cursor: pointer;
+  list-style: none;
+  width: 120px;
+  padding: 15px 0;
+  margin: 0 auto;
+}
+
+/*****SESSION 02*****/
+#red,
+#green {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  display: inline-block;
+  line-height: 200px;
+  text-align: center;
+  font-size: 3em;
+}
+
+#show,
+#swap {
+  width: 50%;
+  border: 1px solid black;
+  margin: auto;
+}
+
+/*****MINI TP*****/
+#inputStarter {
+  padding: 2%;
+  margin: 2%;
+  font-size: 2em;
+  outline: none;
+  border-radius: 10px;
+}
+
+#result {
+  width: 50%;
+  min-height: 100px;
+  line-height: 100px;
+  border: 1px solid silver;
+  margin: 2% auto;
+  font-size: 2em;
+  overflow: auto;
+}
+/*SESSION 3*/
+div.model {
+  width: 250px;
+}
+
+div[id^="square"] {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+}
+
+/*TD MANIPULATION DU DOM*/
+#mes_divs_creees {
+  padding: 25px;
+}
+
+.block {
+  border: 1px solid;
+  width: 50px;
+  height: 50px;
+  margin: 25px;
+  display: inline-block;
+}
+
+.block.is-active {
+  border: 2px solid red;
+}
+
+.block:not(.is-active) {
+  border: 2px solid white;
+}
+
+/*TD TO-DO LIST*/
+#saisie_todo {
+  color: black;
+  background: transparent;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 25px;
+  width: 50%;
+  font-size: 1.2em;
+  outline: none;
+}
+
+#saisie_todo:focus {
+  background: black;
+  color: rgb(247, 223, 30);
+}
+
+#todo_list {
+  padding: 25px;
+}
+
+li[id^="item"] {
+    list-style: hiragana;
+}
+
+/***** VUEJS *****/
+
+.input_vue,
+.input_usa {
+  background: transparent;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+  font-size: 1.5em;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.img_vue {
+  width: 500px;
+}

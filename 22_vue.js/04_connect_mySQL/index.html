@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title></title>
+  <link rel="stylesheet" href="../../00_snippets/js/style.css">
+  <script type="text/javascript" src="appVue.js"></script>
+</head>
+
+<body>
+  <h1>connect mySQL</h1>
+  <section class="exo" id="vue_mysql">
+    <article class="enonce">
+      <h2>go mySQL</h2>
+      <button @click="getDBValues('http://localhost:8001/get-villes-france')">Départements de France</button>
+    </article>
+    <article class="reponse">
+      <ul>
+        <li v-for="dept in villesFrance">{{ dept.nom }} ( {{ dept.code }} )</li>
+      </ul>
+    </article>
+  </section>
+
+</body>
+
+</html>

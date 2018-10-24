@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>TD - Boucles imbriquées</title>
+    <link rel="stylesheet" href="../00_snippets/js/style.css">
+  <script type="text/javascript" src="app.js"></script>
+  <style>
+  ul {
+    display: inline-block;
+    vertical-align: top;
+    width: 25%;
+  }
+
+  ul li {
+    list-style: square;
+  }
+
+  ul li:first-child {
+    list-style: none;
+    text-transform: uppercase;
+    min-height: 100px;
+  }
+
+  ul>p {
+    color: maroon;
+    min-height: 100px;
+  }
+  </style>
+</head>
+<body>
+  <h1>TD - Boucles imbriquées</h1>
+  <section class="exo">
+    <article class="enonce">
+      <h2>Exo 1 : Parcourir produits</h2>
+      <p>Utiliser deux boucles (dont une imbriquée) pour parcourir la structure de données suivante :</p>
+      <p>var produits = [</p>
+  <p>{nom: "baskets enfant", taillesDispo: [33, 34, 35, 36, 37, 38]},</p>
+  <p>{nom: "baskets femme", taillesDispo: [36, 37, 38, 39, 40]},</p>
+  <p>{nom: "baskets homme", taillesDispo: [39, 40, 41, 42, 43, 44, 45]},</p>
+  <p>{nom: "baskets grandes tailles", taillesDispo: [46, 47, 48, 49, 50]}</p>
+<p>];</p>
+<p>Afficher dans une div#exo1 le nom de chaque produit et ses tailles disponibles dans une liste.</p>
+    </article>
+    <article class="reponse">
+      <div id="exo1"></div>
+    </article>
+  </section>
+  <section class="exo">
+    <article class="enonce">
+      <h2>Exo 2 : matrice HTML</h2>
+      <p>Réaliser un programme JS avec deux boucles (dont une imbriquée).</p>
+<p>Votre code créera des matrices (absisse, ordonnée).</p>
+<p>Votre fonction principale prend deux paramètres (lignes et colonnes).</p>
+<p>Elle lance une routine afin d'insérer des tr et des td dans table#exo2 déjà présente dans le document HTML.</p>
+<p>Les cellules de la table seront numérotées en ordre croissant, à partir de 1, de gauche à droite ET de haut en bas.</p>
+<p>La taille minimale de la matrice sera de (1, 1).</p>
+    </article>
+    <article class="reponse">
+      <table id="exo2">
+      </table>
+      </article>
+  </section>
+
+</body>
+</html>

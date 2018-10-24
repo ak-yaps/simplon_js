@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>First Ajax Call</title>
+  <link rel="stylesheet" href="../00_snippets/js/style.css">
+  <style>
+    #test, #test_opendata {
+      padding: 5%;
+      margin: 5%;
+      border: 2px solid black;
+      /*text-align: center;*/
+    }
+
+    #test_opendata {
+      text-align: left;
+    }
+
+    #test:empty, #test_opendata:empty {
+      display: none;
+    }
+  </style>
+  <script type="text/javascript" src="ajax.js"></script>
+    <script type="text/javascript" src="opendata.js"></script>
+</head>
+
+<body>
+  <h1>Appel AJAX</h1>
+  <button type="button" name="button" id="btn">get Ajax</button>
+  <div id="test"></div>
+
+  <button type="button" name="button" id="btn_opendata">Open Data</button>
+  <div id="test_opendata"></div>
+
+</body>
+
+</html>

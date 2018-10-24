@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>TP Click - 02/11/2017</title>
+  <link rel="stylesheet" href="../00_snippets/js/style.css">
+  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+  <script src="app.js"></script>
+  <!-- <script src="https://use.fontawesome.com/11fccbc14c.js"></script> -->
+</head>
+
+<body>
+  <h1>TP - Click</h1>
+  <section class="exo">
+    <article class="enonce done">
+      <p>Rédiger un petit programme :</p>
+      <ul>
+        <li>en HTML, créer un bouton.</li>
+        <li>Utiliser l'attribut onclick pour déclencher une fonction AfficherMessage.</li>
+        <li>Au click sur le bouton, afficher une alerte.</li>
+        <li>En option : encapsuler votre code dans une IIFE</li>
+      </ul>
+    </article>
+    <article class="reponse">
+      <button id="btnMsg" onclick="displayMsg()">Afficher un Message</button>
+    </article>
+  </section>
+  <section class="exo">
+    <article class="enonce">
+      <ul>
+        <li>Créer plusieurs boutons en HTML.</li>
+        <li>Leur mettre une classe CSS 'btn'.</li>
+        <li>En JS, parcourir tous les .btn avec une boucle.</li>
+        <li>Au cick sur chaque bouton, exécuter la fonction afficher Message</li>
+      </ul>
+    </article>
+    <article class="reponse">
+      <button class="btn">bouton n°1</button>
+      <button class="btn">bouton n°2</button>
+      <button class="btn">bouton n°3</button>
+      <button class="btn">bouton n°4</button>
+      <button class="btn">bouton n°5</button>
+    </article>
+  </section>
+  <section class="exo">
+    <article class="enonce">
+      <h2>Associer clicks et classes CSS</h2>
+      <p>Rédiger un programme actifInactif :</p>
+      <ul>
+        <li>Créer un élément UI (Widget) représentant un utilisateur.</li>
+        <li>Se servir par exemple de font-awesome et son isocne user.</li>
+        <li>Au click, sur l'icône, activer ou desactiver une classe CSS .is-active sur le widget.</li>
+        <li>Si le widget n'est pas actif, ajouter la classe, sinon la retirer.</li>
+        <li>Indice : utiliser une api déjà évoqué et testé en cours.</li>
+        <li>BONUS : ajouter une transition css à l'action</li>
+      </ul>
+    </article>
+    <article class="reponse">
+      <i onclick="actifInactif();" class="fa fa-id-card user" aria-hidden="true" id="changeIcon"></i>
+    </article>
+  </section>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title></title>
+  <link rel="stylesheet" href="../../00_snippets/js/style.css">
+  <script type="text/javascript" src="./node_modules/vue/dist/vue.min.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+</head>
+
+<body>
+  <h1>VueJS : TP Events</h1>
+  <section class="exo">
+    <article class="enonce">
+      afficher une alerte au click sur ce bouton 
+    </article>
+    <article class="reponse" id="tp2_vue">
+      <button v-on:click="alerte">Créer une alerte</button>
+    </article>
+  </section>
+  <section class="exo">
+    <article class="enonce">
+      écouter les events "keydown" et stocker la valeur du champs texte dans une prop de data
+    </article>
+    <article class="reponse" id="tp2_vue_2">
+      <input type="text" v-model="q2" v-model.lazy="q3" class="input_vue">
+      <p>2/ {{ q2 }}</p>
+      <p>3/ {{ q3 }}</p>
+    </article>
+  </section>
+  <section class="exo">
+    <article class="enonce">
+      implanter l'exo 2 de façon à ce que l'event ne soit déclenché que si la touche enter est pressée (voir la doc de vue.js )
+    </article>
+  </section>
+  <section class="exo">
+    <article class="enonce">
+      <ul>
+        <li>Créer un bouton toggle.</li>
+        <li>Au click, un élément masqué au départ apparaît.</li>
+        <li>Appliquer une transition CSS sur le détail produit.</li>
+        <li>changer le texte du bouton en "masquer détails"</li>
+      </ul>
+    </article>
+    <article class="reponse">
+      <button>toggle</button>
+    </article>
+  </section>
+  <section class="exo">
+    <article class="enonce">
+      Au click sur le submit, ajouter la valeur du champs texte dans un tableau todos.
+        Boucler sur ce tableau pour afficher tous les éléments dans une liste non ordonnée.
+        Si todos est vie, afficher un message dans le p
+    </article>
+    <article class="reponse"></article>
+  </section>
+
+</body>
+
+</html>

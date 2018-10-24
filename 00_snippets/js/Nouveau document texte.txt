@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Gestion de Stocks</title>
+  <script type="text/javascript" src="app.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <h1>GESTION DES STOCKS</h1>
+  <div class="form_display">
+    <div class="enter_form">
+      <h2> Entrer nouveau produit</h2>
+
+      <form class="formulaire" action="traitement.php" method="post">
+        <input type="text" name="name" placeholder="name" id="name" required><br>
+        <input type="number" name="prix" placeholder="entrez prix en euros" min="0" max="1000" id="prix" required><br>
+        <input type="text" name="description" value="" placeholder="Mettre une description" id="description" required><br>
+        <input type="submit" name="btn" value="valider" id="valider">
+      </form>
+    </div>
+    <div class="edit_form">
+      <h2>Modifier</h2>
+
+      <form class="formulaire" action="index.php" <?php echo $_SERVER[ 'PHP_SELF'];?> method="post">
+        <input type="text" name="name" required>
+        <input type="number" name="prix" min="0" max="1000">
+        <input type="text" name="description">
+        <input type="submit" name="btn" value="valider">
+      </form>
+    </div>
+  </div>
+
+  <div class="form">
+
+
+    <h2>Vos produits</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>id</th>
+          <th>nom</th>
+          <th>prix</th>
+          <th>description</th>
+          <th>modifier</th>
+          <th>supprimer</th>
+        </tr>
+      </thead>
+    </table>
+  </div>
+
+</body>
+
+</html>

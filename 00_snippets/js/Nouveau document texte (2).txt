@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+h1, h2 {
+  text-align: center;
+  padding: 15px;
+}
+
+input {
+  padding: 5px;
+  margin: 10px;
+}
+
+table {
+  margin: auto;
+}
+
+table, thead, th, tr, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+td, th {
+  padding: 2%;
+}
+
+.form_display {
+  display: flex;
+}
+
+.enter_form, .edit_form {
+  flex: 50%;
+}
+
+.edit_form {
+  border-left: 1px solid black;
+  padding-left: 15px;
+}

@@ -1,0 +1,14 @@
+{
+  "name": "03_tp_vuejs_events",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "yaps",
+  "license": "ISC",
+  "dependencies": {
+    "vue": "^2.5.13"
+  }
+}

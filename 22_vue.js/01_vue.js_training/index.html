@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script type="text/javascript" src="./node_modules/vue/dist/vue.min.js"></script>
+  <title>VueJS</title>
+  <link rel="stylesheet" href="../../00_snippets/js/style.css">
+  <script>
+    window.addEventListener("DOMContentLoaded", function() {
+      var app = new Vue({
+        el: '#app_vue_1',
+        data: {
+          titre: "Life is wonderful with frameworks",
+          cpt: 0,
+          shoes: [
+            'nike air force',
+            'adidas stan smith',
+            'timberland classic',
+            'high heels',
+            'babies',
+          ],
+          cat: {
+            name: '녕이',
+            age: 2,
+            type: "Bristish Shorthair"
+          },
+          userName: "",
+          consoles: [
+            {
+              name: 'Nintendo Switch',
+              releaseYear: 2016,
+              by: 'Nintendo',
+            },
+            {
+              name: 'PlayStation 4',
+              releaseYear: 2013,
+              by: 'Sony',
+            },
+            {
+              name: 'Xbox One',
+              releaseYear: 2014,
+              by: 'Microsoft',
+            }
+          ],
+        },
+        methods: {
+          increment: function() {
+            this.cpt += 100;
+            console.log(this.cpt === app.cpt);
+          },
+
+          decrement: function() {
+            // this.cpt -= 100;
+            this.cpt = (this.cpt - 100 >= 0) ? this.cpt -= 100 : 0;
+          },
+
+          ajusterValeur: function(e) {
+            this.cpt = Number(e.target.value);
+          }
+        }
+      });
+      console.log("my first app VueJS -->");
+      console.log(app);
+    })
+  </script>
+</head>
+
+<body>
+  <div id="app_vue_1">
+    <h1 class="title">Hello World!</h1>
+    <h2 class="title">{{ titre }}</h2>
+    <p v-if="cpt >= 500">Barre des 500 dépassée</p>
+    <p v-if="cpt >= 600">Barre des {{ cpt }} dépassée</p>
+    <p v-else>Moins de 500</p>
+    <p>Mon compteur vaut : {{ cpt }}</p>
+    <input type="range" v-on:input="ajusterValeur($event)" min="0" max="1000" step="100" value="0">
+
+    <button type="button" v-on:click="increment($event)">Incrémenter</button>
+
+    <button type="button" v-on:click="decrement()">Décrémenter</button>
+
+    <h2>Nom de l'utilisateur</h2>
+    <input type="text" v-model="userName">
+    <p>{{ userName }}</p>
+
+    <h2>Lister les chaussures</h2>
+    <ul>
+      <li v-for="s in shoes">
+        {{ s }}
+      </li>
+    </ul>
+    <h2>Liste des chats</h2>
+    <p>{{ cat.name }}</p>
+    <p>{{ cat.age }}</p>
+    <p>{{ cat.type }}</p>
+
+    <h2>Mini TP</h2>
+    <p v-for="c in consoles"> {{ c.name }}  was released in {{ c.releaseYear }}  by {{ c.by }}</p>
+  </div>
+</body>
+
+</html>

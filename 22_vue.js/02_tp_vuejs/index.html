@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>TP VueJS</title>
+  <link rel="stylesheet" href="../../00_snippets/js/style.css">
+  <script type="text/javascript" src="./node_modules/vue/dist/vue.min.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+</head>
+
+<body>
+  <h1>VueJS : TP Variables</h1>
+  <section class="exo">
+    <article class="enonce">
+      <h2>Exercice 1</h2>
+      <ol>
+        <li>Afficher le titre de la page en utilisant l'interpolation de chaine</li>
+        <li>Remplir un "p" avec vos noms et âge en utilisant l'interpolation de chaine</li>
+        <li>Afficher votre age multiplié par 3</li>
+        <li>Appeler une fonction pour afficher un nombre compris entre 0 et 1</li>
+        <li>Afficher une image de votre choix en utilisant un bind sur l'attribut "src"</li>
+        <li>Remplire un input texte avec votre nom en bindant sur l'attribut "value"</li>
+      </ol>
+    </article>
+    <article class="reponse" id="exo_vue_1">
+      <h2>{{ title }}</h2>
+      <p>Je suis {{ me.name }}, j'ai {{ me.age }} ans.</p>
+      <p>Mon âge multiplié par 3 est égal à {{ me.age * 3 }}</p>
+      <button type="button" v-on:click="random()">random</button>
+      <article class="reponse" id="exo_vue_1">
+        {{ displayRandom }}
+      </article>
+      <img v-bind:src="src" alt="img_test" class="img_vue">
+      <input type="text" name="" v-bind:value="inputVal" class="input_vue">
+    </article>
+  </section>
+  <section class="exo">
+    <article class="enonce">
+      <h2>Exercice 2</h2>
+      <p>Dans un composant Vue, lister les états des USA</p> <p>Implanter un input texte : à chaque event input dans ce champ, filter les états correspondants à la saisie</p>
+    </article>
+    <article class="reponse" id="exo_vue_2">
+      <input type="text" class="input_usa" v-model="filtre" placeholder="recherche">
+        <ul>
+          <li v-for="e in filtreEtat">{{ e.nom }}</li>
+        </ul>
+    </article>
+  </section>
+
+</body>
+
+</html>
